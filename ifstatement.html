@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>if statement</title>
+    </head>
+    
+    <script>
+        function decision(){
+            a=parseInt(document.getElementById('a').value);
+            b=parseInt(document.getElementById('b').value);
+            if (a<b){
+                document.write("a is less than b")
+            }
+            else if(a>b){
+                document.write("a is greater than b")
+            }
+            else{
+                document.write("none")
+               
+            }
+        }
+    </script>
+    <body>
+        a:
+        <input type="text-box" id='a'>
+        b:
+        <input type="text-box" id='b'>
+        <button type="button" onclick="decision()">DECISION</button>
+    </body>
+</html>

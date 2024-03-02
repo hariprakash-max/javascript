@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fibonacciseries</title>
+    </head>
+<body>  
+
+<p id="result"></p>    
+
+<script>
+    function fibonacciseries(numTerms)
+    {
+        let fibseries = [0,1];
+        if (numTerms <= 2){
+            return fibseries.slice(o, numTerms);
+        }
+        for (let i=2; i< numTerms; i++)
+        {
+            fibseries.push(fibseries[i-1]+fibseries[i-2]);
+        }
+        return fibseries;
+    }
+
+var num=5
+var result=fibonacciseries(num);
+document.getElementById("result").textContent= `Fibonacci series of ${num} is: ${result}`;
+
+
+</script>
+</body>
+</html>
